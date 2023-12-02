@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyanRey</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: black;">
+
+    <div class="container">
+
+        <div class="div1">
+          <img src="ryan2.jpg" style="width: 350px; padding-top: 225px; padding-left: 40px;" alt="sike">
+    
+        </div>
+        <div class="div2">
+          
+            <P style="font-size:x-large; color: white;">
+                RYAN REYNOLDS
+            </P>
+          
+        
+        <br>
+         <h2 id="changintexta" style="color: aquamarine;font-weight: 200; ">
+            I'M AN        
+         </h2>
+     
+         <h2 id="changingtextb" style="color: white; font-weight:200 ; margin: 0%; padding-left: 30px;">
+            ACTOR
+         </h2>
+         <br>
+         <p style="color: white;">IDIF GIEFBISDVI UFGI UGE WBIDBV UI UDUY GIYG FIUYG LIA <br> DUG A7O FG8OA GICUB SAD IFLG7 WIHE ROIGHVO ISEO IGH <br>RIOH VO RHO IWFH OICH FBD FGEI LUAEI WF DSVB JKEWH IOF 
+         </p>
+         <br>
+         <a target="_blank" href="https://www.instagram.com/vancityreynolds/?hl=en">
+            <button class="button">
+                Contact
+            </button>
+
+
+         </a>
+
+    
+        
+        </div>
+    </div>
+    
+
+    
+    <script>
+        const textElement1=document.getElementById("changintexta");
+        const textElement2=document.getElementById("changingtextb")
+
+        const texts1=["I'M AN","I'M A FILM", "I'M A SUCCESSFULL"];
+        const texts2=["ACTOR","PRODUCER","BUSINESSMAN"]
+
+        let index1=0;
+        let index2=0;
+
+        function changetext(){
+            textElement1.textContent=texts1[index1];
+            textElement2.textContent=texts2[index2];
+
+            index1=(index1+1)%texts1.length;
+            index2=(index2+1)%texts2.length;
+        
+        }
+        setInterval(changetext,3000)
+
+         
+    </script>
+
+</body>
+</html>
